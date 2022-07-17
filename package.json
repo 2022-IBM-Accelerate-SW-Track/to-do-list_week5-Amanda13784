@@ -21,7 +21,7 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "4.0.1",
     "styled-components": "^5.3.5",
     "web-vitals": "^1.1.2"
   },
@@ -29,7 +29,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false --detectOpenHandles",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "install-backend": "cd backend && npm install",
+    "install-both": "npm install & npm run install-backend",
+    "backend": "cd backend && node server.js",
+    "start-both": "npm run backend & npm start"
   },
   "eslintConfig": {
     "extends": [
